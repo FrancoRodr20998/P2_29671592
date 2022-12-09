@@ -4,8 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
+    "start": "some command to be run", // you need to add this line
+     "test": "(eslint lib || true) && jest"
+}
   "keywords": [],
   "author": "",
   "license": "ISC",
