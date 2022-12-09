@@ -1,28 +1,17 @@
 const express = require('express')
 const app = express()
 const path = require('path')
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
 const bodyParser = require('body-parser');
 const { urlencoded } = require('express');
 const sqlite3 = require('sqlite3').verbose();
 let alert = require('alert'); 
-=======
->>>>>>> 54ac794b13226daec56c668dc480740daafe2ca1
-=======
->>>>>>> 54ac794b13226daec56c668dc480740daafe2ca1
-=======
->>>>>>> 54ac794b13226daec56c668dc480740daafe2ca1
 
 const PORT = process.env.PORT || 5000;
 
 
 // set static folder
 app.use(express.static(path.join(__dirname, "public")))
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
+
 let path_db        = (   __dirname   +   '/data.db'                       );
 
 app.use(bodyParser.urlencoded({
@@ -64,21 +53,3 @@ app.post('/' ,function(req,res){
         });
     db.close();
 });
-=======
-=======
->>>>>>> 54ac794b13226daec56c668dc480740daafe2ca1
-=======
->>>>>>> 54ac794b13226daec56c668dc480740daafe2ca1
-
-app.listen(PORT, () => console.log("Server is listening on port " + PORT))
-
-app.get('/', function(req, res, next) {
-    res.send("Hello world");
-});
-<<<<<<< HEAD
-<<<<<<< HEAD
->>>>>>> 54ac794b13226daec56c668dc480740daafe2ca1
-=======
->>>>>>> 54ac794b13226daec56c668dc480740daafe2ca1
-=======
->>>>>>> 54ac794b13226daec56c668dc480740daafe2ca1
